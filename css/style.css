@@ -14,12 +14,14 @@
   padding: 0 1rem;
   max-width: 71.25rem;
   width: 100%;
+  hight: 0%
 }
 
 .grid {
   display: flex;
   flex-direction: column;
   flex-flow: row wrap;
+  rows: auto auto;
 }
 .grid > [class*="column-"] {
   display: block;
@@ -554,7 +556,7 @@ body {
 }
 
 ul li {
-  margin: 0 1.5rem 0 0;
+  margin: 0rem 1.5rem 0rem 0rem;
 }
 
 a {
@@ -592,13 +594,45 @@ nav li:nth-child(2) {
 #highlight {
   color: #ea8478;
   font-size: 1.25rem;
+  padding: wrap;
+  margin: 0px;
 }
 
 * {
   list-style-type: none;
 }
 
+@supports (display: grid) {
+  .gallery .grid {
+    grid-gap: 1rem;
+  }
+}
+@media (min-width: 62rem) {
+  nav ul {
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+  }
+}
+@media screen and (max-width: 1024px) {
+  img:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
 
+  .img-container {
+    height: 100%;
+  }
+  .img-container:hover .img-content-hover {
+    display: none;
+  }
+
+  .img-content {
+    display: block;
+    padding: 1rem 0;
+  }
+}
 
 
 .folio{
@@ -654,7 +688,7 @@ nav li:nth-child(2) {
 #main {
   height: 100%;
   transition: margin-left .5s;
-  padding: 18px;
+  padding: 0px;
 }
 * {
   box-sizing: border-box;
