@@ -555,9 +555,10 @@ body {
   }
 }
 
-ul li {
-  margin: 0rem 1.5rem 0rem 0rem;
+.ul li {
+  margin: 0rem 0rem 0rem 0rem;
 }
+
 
 a {
   color: #787878;
@@ -574,7 +575,7 @@ a. active {
 }
 
 nav {
-  padding: 2.5rem 0 2.5rem 0;
+  padding: 0px;
 }
 nav ul {
   display: -webkit-box;
@@ -636,32 +637,10 @@ nav li:nth-child(2) {
 
 
 .folio{
-=======
-body {
-  height: 100%;
-  font-family: "Lato", sans-serif;
-  margin-left: 0px;
-  Margin-right: 0px;
-  Margin-top: 60px;
-}
-
-.container{
->>>>>>> parent of 32d8303... new layout fuck that old shit
-=======
-body {
-  height: 100%;
-  font-family: "Lato", sans-serif;
-  margin-left: 0px;
-  Margin-right: 0px;
-  Margin-top: 60px;
-}
-
-.container{
->>>>>>> parent of 32d8303... new layout fuck that old shit
   max-width: 960px;
   margin: 0 auto;
   background: #f9f9f9;
-  font-size: 24px;
+  font-size: 18px;
   padding: 25px;
 }
 
@@ -669,11 +648,11 @@ body {
 .bgimg-1 {
   background-image: url("../images/header.gif");
   background-repeat: no-repeat;
-  min-height: 50%;
+  min-height: 29%;
   position: relative;
   opacity: 100%;
   background-attachment: fixed;
-  background-position: top;
+  background-position: absolute;
   background-size: 100%;
 }
 
@@ -688,88 +667,24 @@ body {
 .caption span.border {
   background-color: #111;
   color: #fff;
-  padding: 18px;
-  font-size: 25px;
+  padding: 0px;
+  font-size: 18px;
   letter-spacing: 10px;
 }
-
-.main-header {
-  text-align: center;
-  background-color: #000;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 
 
 .content {
   padding-left: 50px;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenavfix {
-  position: fixed;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
 
 #main {
   height: 100%;
   transition: margin-left .5s;
   padding: 0px;
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.rotate {
-  background-color: transparent;
-  outline: 2px dashed;
-  transform: rotate(45deg);
-}
-
 * {
   box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
 }
 
 .column img {
