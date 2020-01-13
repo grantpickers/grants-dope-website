@@ -5,17 +5,24 @@
 
 body {
   margin: 40px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: ‘silkscreennormal’, 'Press Start 2P', cursive;
   Font-weight:normal;
   font-style:normal;
   background-color: #fff;
   color: #31393E;
-  font-smooth: never;
   -webkit-font-smoothing : none;
-   font-size: 10px;
-   Font-padding: 5px;
+   font-size: 8px;
    letter-spacing: 0.1em;
     line-height: 1.5rem;
+}
+
+@font-face {
+    font-family: ‘silkscreennormal’;
+    src: url(‘fonts/slkscr-webfont.woff2’) format('woff2'),
+         url(‘fonts/slkscr-webfont.woff’) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 h1, p {
@@ -25,14 +32,14 @@ h1, p {
 /* no grid support? */
 .sidebar {
   float: left;
-  width: 19.1489%;
+  max-width: 17%;
+
 
 }
 
 .content {
   float: right;
-  width: 79.7872%;
-  display: flex;
+  width: 85%;
 
 }
 
@@ -161,8 +168,8 @@ a.active {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 75%;
+    max-width: 75%;
   }
 }
 
