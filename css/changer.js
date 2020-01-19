@@ -1,4 +1,6 @@
-  document.getElementById("main").style.marginLeft= "0";
+/*  
+
+document.getElementById("main").style.marginLeft= "0";
 }
 
 const imgContent = document.querySelectorAll('.img-content-hover');
@@ -11,3 +13,4 @@ function showImgContent(e) {
 };
 
 document.addEventListener('mousemove', showImgContent);
+*/

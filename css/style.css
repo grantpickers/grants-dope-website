@@ -2,10 +2,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'silkscreennormal';
+    src: url('fonts/slkscr-webfont.woff2') format('woff2'),
+         url('fonts/slkscr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
   margin: 40px;
-  font-family: ‘silkscreennormal’, 'Press Start 2P', cursive;
+  font-family: 'silkscreennormal', 'Press Start 2P', cursive;
   Font-weight:normal;
   font-style:normal;
   background-color: #fff;
@@ -16,14 +24,7 @@ body {
     line-height: 1.5rem;
 }
 
-@font-face {
-    font-family: ‘silkscreennormal’;
-    src: url(‘fonts/slkscr-webfont.woff2’) format('woff2'),
-         url(‘fonts/slkscr-webfont.woff’) format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 h1, p {
   margin: 0 0 1em 0;
@@ -39,7 +40,7 @@ h1, p {
 
 .content {
   float: right;
-  width: 85%;
+  width: 83%;
 
 }
 
@@ -155,7 +156,7 @@ a.active {
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 50%;
-  max-width: flex;
+  max-width: 50%;
   padding: 0 4px;
 }
 
@@ -168,16 +169,15 @@ a.active {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 75%;
-    max-width: 75%;
+    flex: 90%;
+    max-width: 90%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
+  .content {
+    width: 100%;
   }
 }
 .header, .footer {
@@ -190,7 +190,13 @@ a.active {
 /* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
 @supports (display: grid) {
   .wrapper > * {
-    width: auto;
     margin: 0;
   }
+}
+
+.wrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
 }
