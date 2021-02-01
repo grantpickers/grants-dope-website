@@ -10,7 +10,8 @@
 }
 
 body {
-  margin: 40px;
+  margin: 0px;
+  padding: 40px;
   font-family: 'Apercu-Mono';
     text-transform: normal;
     line-height: 33px;
@@ -39,6 +40,7 @@ h1, p {
 .content {
   float: right;
   width: 77%;
+  font-size: 10px
 
 }
 
@@ -104,6 +106,7 @@ a.active {
   flex: 50%;
   max-width: 50%;
   padding: 0 4px;
+    font-size: 10px
 }
 
 .column img {
